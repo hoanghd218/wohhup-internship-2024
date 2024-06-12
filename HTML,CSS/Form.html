@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tech Registration</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script src="/JS/loops.js"></script>
+<body>
+   <form method="post" name="f" >
+      <div>
+         <hr style="height: 1px; background-color: red;"> 
+         <p class="red">*</p><b> Indicates required information.</b>
+         <p class="bgPur">Where would you like your order delivered?</p>
+                
+         <input type="radio" name ="ra1"> Deliver to my address<br>
+         <input type="radio" name ="ra1"> Deliver to a store near me (<u style="color: blue;">Learn more</u>)
+         <p>Participating stores cannot accept deliveries of select oversize fumiture items.</p>
+         <table>
+            <tr>
+               <td class="bgPur" style="width: 900px;"> Billing Address</td>
+               <td class="bgPur" style="width:50%;"></td>
+            </tr>
+            <tr>
+               <td>Billing address must match credit card.</td>
+               <td><input type="checkbox" checked> Use Billing Address </td>
+            </tr>
+            <tr>
+               <td>
+                  <table>
+                     <tr>
+                        <td style="width: 300px;" >First Name:<p class="red">*</p></td>
+                        <td style="width:60%;"><input required class="text" type="text" value="John"></td></td>
+                     </tr>
+                     <tr>
+                        <td>Last Name:<p class="red">*</p></td>
+                        <td><input required class="text" type="text" value="Newman"> </td>
+                     </tr>
+                        <tr>
+                           <td>Company Name:</td>
+                           <td><input  class="text" type="text" ></td>
+                        </tr>
+                        <tr>
+                           <td>Address Line 1:<p class="red">*</p></td>
+                           <td><input required class="text" type="text" value="2125 Chestnut St"> </td>
+                        </tr>
+                        <tr>
+                           <td>Address Line 2:</td>
+                           <td><input  class="text" type="text" > </td>
+                        </tr>
+                        <tr>
+                           <td>City:<p class="red">*</p></td>
+                           <td><input required class="text" type="text" value="San Francisco"> </td>
+                        </tr>
+                        <tr>
+                           <td>State:<p class="red">*</p></td>
+                           <td> 
+                              <select class="text">
+                                 <option>CALIFORNIA</option>
+                                 <option>NEW YORK CITY</option>
+                              </select> 
+                           </td>
+                        </tr>
+                           <tr>
+                              <td>Zip Code:<p class="red">*</p></td>
+                              <td><input required class="text" type="text" value="94123"> </td>
+                           </tr>
+                           <tr>
+                              <td>Phone Number:<p class="red">*</p></td>
+                              <td><input required class="text" type="text" value="4153153567"> </td>
+                           </tr>
+                           <tr>
+                              <td>Extension:</td>
+                              <td><input  class="text" type="text" > </td>
+                           </tr>
+                           <tr>
+                              <td colspan="2"><div class="warp">
+                              <b>Please note: </b><p style="display: inline;">...</p>
+                           </div>
+                              </td>
+                           </tr>
+                        </table> 
+                     </td>
+                     <td> 
+                      <table>
+                      <tr>
+                         <td style="width: 300px;" >First Name:<p class="red">*</p></td>
+                         <td style="width:60%;"><input required class="text" type="text" value="John"></td></td>
+                      </tr>
+                     <tr>
+                       <td>Last Name:<p class="red">*</p></td>
+                      <td><input required class="text" type="text" value="Newman"> </td>
+                   </tr>
+                        <tr>
+                          <td>Company Name:</td>
+                           <td><input  class="text" type="text" ></td>
+                        </tr>
+                    <tr>
+                        <td>Address Line 1:<p class="red">*</p></td>
+                        <td><input required class="text" type="text" value="2125 Chestnut St"> </td>
+                   </tr>
+                    <tr>
+                        <td>Address Line 2:</td>
+                         <td><input  class="text" type="text" > </td>
+                   </tr>
+                     <tr>
+                        <td>City:<p class="red">*</p></td>
+                         <td><input required class="text" type="text" value="San Francisco"> </td>
+                    </tr>
+                         <tr>
+                           <td>State:<p class="red">*</p></td>
+                            <td>
+                                <select class="text">
+                                    <option>CALIFORNIA</option>
+                                    <option>NEW YORK CITY</option>
+                                </select> 
+                            </td>
+                           </tr>
+                           <tr>
+                              <td>Zip Code:<p class="red">*</p></td>
+                              <td><input required class="text" type="text" value="94123"> </td>
+                           </tr>
+                              <tr>
+                                 <td>Phone Number:<p class="red">*</p></td>
+                                 <td><input required class="text" type="text" value="4153153567"> </td>
+                              </tr>
+                              <tr>
+                                 <td>Extension:</td>
+                                 <td><input  class="text" type="text" > </td>
+                              </tr>
+                              <tr>
+                                 <td colspan="2"><div class="warp">
+                                    <b>Please note: </b><p style="display: inline;">...</p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                    </tr> 
+         </table>
+            <p class="bgPur"> Email Address</p>
+            <p>We require an email address, so that we can communicate with you about your oder.</p>
+         <table>
+            <tr>
+               <td style="width: 250px;"><p class="red"><b>IEmail Address:</b></p></td>
+               <td><input class="text" type="text" value="john.newman@baymard.com"> </td>
+            </tr>
+            <tr>
+               <td>Retype email Address:<p class="red">*</p></td>
+               <td><input required class="text" type="text" value="john.newman@baymard.c"> </td>
+            </tr>
+         </table>
+         <input type="checkbox" ><b>Yes,</b> I would like to......<br> 
+      </div>
+   </form>
+</body>
+</html>
