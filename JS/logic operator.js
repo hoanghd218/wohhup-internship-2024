@@ -1,3 +1,26 @@
+// alert('nothing');
+// [1,2].forEach(alert);
+
+let myName = 'Andrew';
+
+// let myAge = prompt('How old are you?', 21),
+   myCity = 'New York',
+   myCountry = 'USA';
+
+// alert(myName + myAge + myCity + myCountry);
+
+// let isMale = confirm('Are you a male?');
+// alert(isMale);
+
+let myConversion = '2' / '3';
+// alert(myConversion);
+
+// let myYear = prompt('How old are you?', '');
+
+// let myCheck = myYear > 18 ? 'Cool!' : 'See you in 18';
+// alert(myCheck)
+
+
 // logic operator
 
    // OR
