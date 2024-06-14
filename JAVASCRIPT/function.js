@@ -128,3 +128,16 @@ welcome();  // runs
 let mySum = (a, b) => a + b;
 
 alert(sum(2,3));  // 5
+
+
+   // Ex1
+function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
