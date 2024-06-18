@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://www.unpkg.com/react@18.3.1/umd/react.development.js" crossorigin></script>
+   <script src="https://www.unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"  crossorigin></script>
+   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+   <div id="root"></div>
+
+   <script type="text/babel">
+      // const root = document.getElementById('root');
+      // const h1 = document.createElement('h1');
+
+      // h1.innerText = 'Hmmm';
+
+      // h1.id = 'Heading';
+      // h1.className = 'nothing'; 
+
+      // Object.assign(h1.style, {
+      //    color: 'green',
+      //    backgroundColor: 'white',
+      // })
+
+      // // React
+      // // <h1 title="Hello" class="heading">Hmmm</h1>
+      // const h1R = React.createElement('h1', {
+      //    title: 'Hello',
+      //    className: 'heading',
+      // }, 'Hmmm')
+
+      // // <ul>
+      // //    <li>JS</li>  
+      // //    <li>VueJS</li>
+      // // <ul>
+      //    // DOM
+      // const ulDOM = document.createElement('ul');
+
+      // const liDOM1 = document.createElement('li');
+      // liDOM1.id = 'id-1';
+      // liDOM1.innerText = 'JS';
+
+      // const liDOM2 = document.createElement('li');
+      // liDOM2.id = 'id-2';
+      // liDOM2.innerText = 'VueJS';
+      
+      // ulDOM.appendChild(liDOM1);
+      // ulDOM.appendChild(liDOM2);
+
+      // document.body.appendChild(ulDOM);
+      
+      //    // React
+      // const ulR = React.createElement('ul', {
+      //    id: 'id-1',
+      //    style: 'color: red',
+      // },
+      //    React.createElement('li', { id: 'li-1' }, 'JS'),
+      //    React.createElement('li', null, 'VueJS'),
+      // )
+
+         // exam
+      const divR = React.createElement('div', {
+         className: 'post-item',
+      },
+         React.createElement('h2', { title: 'RJS'}, 'ReactJS'),
+         React.createElement('p', {}, 'VueJS'),
+      )
+
+         // use JSX
+      const divR_JSX = (
+         <ul>
+            <li>JS</li>  
+            <li>VueJS</li>
+         </ul>
+      );
+
+      // get root elements
+      const root = document.getElementById('root');
+
+      const rootElement = ReactDOM.createRoot(root);
+      rootElement.render(divR);
+   </script>  
+</body>
+</html>
