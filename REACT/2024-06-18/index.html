@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://www.unpkg.com/react@18.3.1/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://www.unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // const myClass = [
+      //    {
+      //       name: '12A1',
+      //    },
+      //    {
+      //       name: '12A2',
+      //    },
+      //    {
+      //       name: '12A3',
+      //    },
+      // ]
+
+      // const RJSX = (
+      //    <ul>
+      //       {myClass.map((myClass, index) =>
+      //          <li key={index}>{myClass.name}</li>
+      //       )}
+      //    </ul>
+      // );
+
+      // React components
+      // use function
+      // in props, class -> className, for -> htmlFor
+      function Header(props) {
+        return (
+          <>
+            <img src={props.image} alt={props.title} />
+            <label htmlFor="email">{props.desc} </label>
+            <input type="email" />
+            <div className="Header">Header</div>
+          </>
+        );
+      }
+
+      // use class
+      class Content extends React.Component {
+        render() {
+          return <div className="content">Content</div>;
+        }
+      }
+
+      const ReactFrag = (
+        <>
+          <Header />
+          <h1>hmmm</h1>
+          <h1>hmmm</h1>
+          <Content />
+        </>
+      );
+
+      function App() {
+        return (
+          <div id="wrapper">
+            <Header image="." title="VueJS" desc="hmmm" />
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      // root.render(RJSX);
+      root.render(<App />);
+    </script>
+  </body>
+</html>

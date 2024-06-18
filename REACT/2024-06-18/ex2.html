@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://www.unpkg.com/react@18.3.1/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://www.unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      // API
+      const stockData = [
+        {
+          symbol: "PRAA",
+          name: "PRA Group, Inc.",
+          currency: "USD",
+          stockExchange: "NasdaqGS",
+          exchangeShortName: "NASDAQ",
+        },
+        {
+          symbol: "PAAS",
+          name: "Pan American Silver Corp.",
+          currency: "USD",
+          stockExchange: "NasdaqGS",
+          exchangeShortName: "NASDAQ",
+        },
+      ];
+
+      const StockItem = ({ stock, onClick }) => (
+        <div>
+          <h2 onClick={() => onClick(stock)}>{stock.name}</h2>
+          <p>{stock.currency}</p>
+          <p>{stock.exchangeShortName}</p>
+        </div>
+      );
+
+      // App.js
+      function App() {
+        const handleClick = (stock) => {
+          alert(stock.exchangeShortName);
+        };
+
+        return (
+          <div>
+            {stockData.map((stock) => (
+              <StockItem stock={stock} onClick={handleClick} />
+            ))}
+          </div>
+        );
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(<App />);
+    </script>
+  </body>
+</html>
