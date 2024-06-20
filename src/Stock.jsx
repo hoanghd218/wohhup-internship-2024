@@ -1,13 +1,26 @@
 function Stock(props){
 
-   const Stock1 = "PDA";
-   const Stock2 = "HSA";
+   const tableStyle = {
+      width: '100%', 
+   }
+
+   // const stockItems = ['PDA', 'SDA', 'HSA', 'NVD', 'APL'];
+   // stockItems.sort();
+
+   const stockRanking = [{id: 1, name: 'ADS', ranking: 1},
+                         {id: 2, name: 'AME', ranking: 2},
+                         {id: 3, name: 'AMD', ranking: 3},
+                         {id: 4, name: 'MCS', ranking: 4},
+                         {id: 5, name: 'BCN', ranking: 5}];
+
+   // const stockList = stockItems.map(stock => <li>{stock}</li>)
+   const stockRank = stockRanking.map(stockR => <li key={stockR.id}>{stockR.name}, rank: 
+                                                 {stockR.ranking}</li>);
 
    return(
-      <ul>
-         <li>{Stock1}</li>
-         <li>{Stock2}</li>
-      </ul>      
+      <>
+         <ul>{stockRank}</ul> 
+      </> 
    );
 }
 
